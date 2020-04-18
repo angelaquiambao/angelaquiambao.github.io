@@ -1,0 +1,103 @@
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+header, #projects, #extras {
+    padding-top: 20px;
+    margin: 10px 120px;
+    display: inline-block;
+}
+
+ul#navbar {
+    list-style-type: none;
+    margin: 10px 120px;
+    padding: 25px 0px 0px 0px;
+    overflow: hidden;
+}
+  
+#aq {
+    float:left;
+    display: block;
+    padding: 0px;
+    font-size: 22px;
+}
+  
+li.nav {
+    text-align: center;
+    float: right;
+    display: block;
+    padding: 8px;
+    font-size: 18px
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    padding: 2px;
+    background: lightsteelblue;
+    color: white;
+}
+
+/* taken from w3 schools */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    background-color: black;
+    font-size: small;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 40%;
+    margin-top: 5px;
+    margin-left: -60px;
+}
+
+.tooltip:hover {
+    background: lightsteelblue;
+    color: white;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    color:white;
+    text-align: center;
+  }
+  
+  .proj:hover .overlay {
+    opacity: 80%;
+    background-color: black;
+  }
+  
+.proj {
+    float: left;
+    position: relative;
+    width: 500px;
+    height:500px;
+    margin-left: 85px;
+}
