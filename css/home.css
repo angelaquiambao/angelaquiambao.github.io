@@ -31,12 +31,12 @@ li.nav {
     font-size: 18px
 }
 
-a:link, a:visited {
+#navbar a:link, a:visited {
     text-decoration: none;
     color: black;
 }
 
-a:hover {
+#navbar a:hover {
     padding: 2px;
     background: lightsteelblue;
     color: white;
