@@ -4,9 +4,8 @@
 /* SETTING MAIN STYLE */
 html, body {
     font-family: Karla, sans-serif;
-    margin: 1rem 3rem;
     background-color: whitesmoke;
-
+    margin: 0;
     /* no text highlight; code from stackoverflow */
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -24,18 +23,19 @@ body {
 
 /* NAVIGATION */
 nav {
+    margin: 2.5rem 7rem;
     display: flex;
     padding-top: 0.5rem;
 }
 nav div.home {
-    margin-top: -0.1rem;
+    margin-top: -0.2rem;
     flex-grow: 1;
 }
 
 /* NAVIGATION LINKS */
 nav div a { 
-    margin: 1rem 0.4rem; 
-    font-size: 1.2rem;
+    margin: 1rem 0.6rem; 
+    font-size: 1.4rem;
     text-decoration: none; 
     color: black; 
     padding: 0.2rem;
@@ -55,46 +55,53 @@ nav div.home a, nav div.home a:hover {
 
 /* HEADER */
 header {
-    margin: 4rem 0.5rem 1rem;
+    margin: 3rem 8rem 1rem;
 }
 .intro {
     font-family: Lora, serif;
     font-style: italic;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
-.intro span {
+.intro span{
     color:blue;
+    text-shadow: black;
 }
 header h2 {
-    margin-top: 0rem;
-    font-size: 1.5rem;
+    margin: 0rem;
+    font-size: 1.6rem;
     font-weight: 300;
 }
 header p {
     margin-top: .5rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 header img {
     float: left;
-    margin: 0.1rem 1rem 0rem 0.55rem;;
+    margin: 0.1rem 2.4rem 0rem 1.2rem;
+}
+
+#resume {
+    width: 50%;
+    height: 38rem;
+    float: left; 
 }
 
 /* MAIN CONTENT */
 main {
-    margin: 3rem 0.5rem 0.5rem;
+    margin: 3rem 8rem 0.5rem;
 }
 h2.ctitle {
     margin-bottom: 1rem;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     font-weight: 500;
     font-family: Lora, serif;
     font-style: italic;
     color: blue;
 }
 div.item {
-    margin: 2rem 0rem;
+    margin: 1rem 0rem 3rem;
     display: flex;
 }
 div.desc {
@@ -106,7 +113,7 @@ div.desc, div.pdate {
 }
 .pdate h3 {
     margin-top: 0.7rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-right: 0.5rem;
     font-size: 1.8rem;
     font-weight: 200;
@@ -115,60 +122,102 @@ div.desc, div.pdate {
     margin: 0rem;
     font-family: Lora, serif;
     font-style: italic;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     font-weight: 400;
 }
 .desc p {
     margin-top: 0.8rem;
-    font-size: 1.2rem;
-}
-.desc img {
-    width: 12rem;
-    float: right;
-    margin: 1rem;
-    margin-right: 5rem;
+    font-size: 1.4rem;
 }
 a.redirect {
     margin-top: 2rem;
     margin-bottom: 0rem;
     margin-left: 2rem;
     padding: 0.4rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 400;
     text-decoration: none;
 
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: box-shadow 0.5s, left 0.5s, top 0.5s;
+
     border: 0.2rem solid blue;
     color: blue;
-    box-shadow: 0.5rem 0.4rem blue;
+    box-shadow: 0.4rem 0.4rem 0rem -0.2rem whitesmoke, 0.4rem 0.4rem 0rem 0rem blue;
     
 }
 a.redirect:hover {
     color: whitesmoke;
     border-color: whitesmoke;
-    box-shadow: none;
+    box-shadow: 0rem -0rem 0rem -0.2rem whitesmoke, 0rem 0rem 0rem 0rem blue;
+
+    top: 0.4rem;
+    left: 0.4rem;
+
     background-color: blue;
 }
 
+/* footer */
+.footer {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: static;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    background-color: blue;
+    color: whitesmoke;
+}
+.footer * {
+    margin: 1rem 8rem;
+    color: whitesmoke;
+}
+.footer h1 {
+    padding-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-family: Lora, serif;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.footer a {
+    font-size: 1.1rem;
+    text-decoration: none; 
+    display: inline-block;
+    margin: 0.1rem 8rem;
+    padding: 0rem 0.4rem;
+}
+.footer a:hover {
+    color:blue;
+    background-color: whitesmoke;
+}
+
+
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
-    html, body {margin: 1rem 1rem;}
-
-    nav div a {font-size: 1rem; margin: 1rem 0.2rem; }
-    header {text-align: center;  margin-top: 2.2rem;}
-    .intro {font-size: 1.6rem; margin-top: 0.5rem; margin-bottom: 0.5rem;}
+    nav {margin: 2.2rem 2rem} 
+    nav div a {font-size: 1.1rem; margin: 1rem 0.2rem; }
+    header {text-align: center;  margin: 2.2rem 2rem;}
+    .intro {font-size: 1.45rem; margin-top: 0.5rem; margin-bottom: 0.5rem;}
     header h2 {font-size: 1rem; margin: 0rem .5rem;}
     header img {float: none;}
     header p {font-size: 1rem; text-align: left;}
     span.decoration {letter-spacing: 0.25rem;}
+    #resume {float: none; width: 100%; height:36rem; margin: 0.5rem 0rem;}
 
+    main {margin: 2rem 2rem;}
     h2.ctitle {font-size: 1.8rem;}
-    div.item {margin: 1.5rem 0rem;}
+    div.item {margin: 1.5rem 0rem 3rem;}
     .pdate {display: none;}
     .desc {text-align: center;}
     .desc h3 {font-size: 1.5rem;}
     .desc p {font-size: 1rem;}
     .desc img {float: none; display: block; width: 10rem; margin:0rem 5rem;}
     a.redirect {margin-left: 0rem; margin-top: 1rem; font-size: 1rem;}
+    
+    .footer {display: none}
 }
 
 
