@@ -82,8 +82,11 @@ header img {
     margin: 0.1rem 2.4rem 0rem 1.2rem;
 }
 
+.iframecontainer {
+    width: 50%
+}
 #resume {
-    width: 50%;
+    width: 100%;
     height: 38rem;
     float: left; 
 }
@@ -93,12 +96,18 @@ main {
     margin: 3rem 8rem 0.5rem;
 }
 h2.ctitle {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 2.6rem;
     font-weight: 500;
     font-family: Lora, serif;
     font-style: italic;
     color: blue;
+}
+h4.notice {
+    margin: 0rem 2rem;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
 }
 div.item {
     margin: 1rem 0rem 3rem;
@@ -198,14 +207,17 @@ a.redirect:hover {
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
     nav {margin: 2.2rem 2rem} 
-    nav div a {font-size: 1.1rem; margin: 1rem 0.2rem; }
+    nav div a {font-size: 1.1rem; margin: 1rem 0.2rem;}
+    nav div.home a {margin: 0.75rem 0.2rem;}
     header {text-align: center;  margin: 2.2rem 2rem;}
     .intro {font-size: 1.45rem; margin-top: 0.5rem; margin-bottom: 0.5rem;}
     header h2 {font-size: 1rem; margin: 0rem .5rem;}
     header img {float: none;}
     header p {font-size: 1rem; text-align: left;}
     span.decoration {letter-spacing: 0.25rem;}
-    #resume {float: none; width: 100%; height:36rem; margin: 0.5rem 0rem;}
+
+    .iframecontainer {width: 100%; float: none;}
+    #resume {width: 100%; height:36rem; margin: 0.5rem 0rem;}
 
     main {margin: 2rem 2rem;}
     h2.ctitle {font-size: 1.8rem;}
@@ -216,7 +228,7 @@ a.redirect:hover {
     .desc p {font-size: 1rem;}
     .desc img {float: none; display: block; width: 10rem; margin:0rem 5rem;}
     a.redirect {margin-left: 0rem; margin-top: 1rem; font-size: 1rem;}
-    
+
     .footer {display: none}
 }
 
