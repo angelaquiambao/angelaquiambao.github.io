@@ -1,35 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Karla&family=Roboto+Mono:wght@300;400&display=swap');
 
-h1, h2, h3, h4, h5 {font-family:Lora, serif; font-style: italic;}
+html, body {background-color: white;}
 
-.heading {
-    margin-top: 14px;
-    margin-bottom: 0px;
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family:Lora, serif; font-style: italic;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: lowercase;
+    margin-top: 1.8rem;
+}
+
+h3{font-size: 1.4rem}
+
+h3.pov {
     font-family: Lora, serif;
     font-style: italic;
+    text-align: center;
+    color: blue;
+    margin: 1.2rem 10rem 0rem;
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-weight: 400;
 }
 
 p {
-    margin-top: 4px;
+    font-size: 1.2rem;
+    margin: 1.2rem 0rem;
 }
+ul, li {font-size: 1.2rem}
 
-header, div {
-    margin-left: auto;
-    margin-right: auto;
-    width: 840px important; 
-    height: auto;
-}
-
-table, th, td {
-    font-size: 16px;
-    border: 1px solid black;
+table {
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
     border-collapse: collapse;
+    width: 100%;
+    text-align: center
+}
+th, td {
+    padding: 0.5rem 2rem;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    width: 20%;
 }
 
-#productlink {
-    color: #0084E4 !important;
-    text-decoration: underline;
-    margin-right: auto;
+main table {
+    text-align: left;
+}
+
+table.analysis {
+    width: 65%;
+    margin: 2rem auto;
+}
+
+img {
+    margin-top: 1.2rem;
+    margin-bottom: 1.4rem;
     margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
+img.comp {
+    width: 250px;
+}
+
+img.participant {
+    float:right; 
+    width: 25%;
+}
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+
+    p {margin: 0.8rem;}
+
+    table {
+        width: 700px;
+    }
+    header table {display: none;}
+    table.analysis {margin: 1rem;}
+    th, td, ul, li {font-size: 1rem;}
+
+    h3.pov {
+        margin: 1.4rem;
+        font-size: 1.5rem;
+    }
+
+    img {
+        margin: 0.5rem auto;
+    }
+
+    img.comp {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    img.participant {
+        display: none;
+    }
+
+    a.redirect {
+        font-size: 1.3rem;
+    }
+
+}
