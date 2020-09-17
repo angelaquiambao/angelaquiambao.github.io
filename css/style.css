@@ -83,7 +83,6 @@ header p {
 img#me {
     float: left;
     margin: 0.1rem 2.4rem 0rem 1.2rem;
-    display: initial;
 }
 img.wip {
     float: right;
@@ -226,7 +225,7 @@ a.redirect:hover {
     header {text-align: center;  margin: 2.2rem 2rem;}
     .intro {font-size: 1.45rem; margin-top: 0.5rem; margin-bottom: 0.5rem;}
     header h2 {font-size: 1rem; margin: 0rem .5rem;}
-    img#me {float: none; margin: 0.4rem auto; display: block;}
+    img#me {float: none; margin: 0.4rem auto;}
     header p {font-size: 1rem; text-align: left;}
     img.wip {display: none;}
     span.decoration {letter-spacing: 0.25rem;}
