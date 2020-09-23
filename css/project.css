@@ -55,6 +55,10 @@ th, td {
     border-collapse: collapse;
     width: 20%;
 }
+td.tableheader {
+    font-weight: bold;
+    width: 10%;
+}
 
 main table {
     text-align: left;
@@ -91,7 +95,7 @@ img.participant {
     table {
         width: 700px;
     }
-    header table {display: none;}
+    header table {width: 100%;}
     table.analysis {margin: 1rem;}
     th, td, ul, li {font-size: 1rem;}
 

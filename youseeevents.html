@@ -7,146 +7,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 
     <!-- custom css -->
-    <link href="css/home.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/project.css" rel="stylesheet">
-
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Prompt&family=Source+Code+Pro&display=swap" rel="stylesheet">
-    
     
     <title>you see events — case study</title>
 </head>
 
-<style>
-    
-    .heading {
-        margin-top: 14px;
-        margin-bottom: 0px;
-    }
-
-    p {
-        margin-top: 4px;
-    }
-
-    table {
-        table-layout: fixed;
-    }
-
-    th, td {
-        width: 50%;
-        padding: 10px;
-    }
-
-    table, th, td {
-        font-size: 16px;
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-
-    #productlink {
-        color: #0084E4 !important;
-        text-decoration: underline;
-        margin-right: auto;
-        margin-left: auto;
-    }
-</style>
-
-<body style="background-color: white;">
+<body>
     <!-- navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html"><h3 style="font-family: Source Code Pro, serif">angela quiambao</h3></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end h4" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">about</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">resume</a>
-            </li>
-          </ul>
+    <nav>
+        <div class="home">
+            <a href="index.html">&#10033;</a>
         </div>
-      </nav>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="resume.html">RESUME</a>
+        </div>
+    </nav>
 
-    <div style="width: 1000px;" class="mx-auto pt-4">
     <header>
-            <h1 style="margin-top: 0px; margin-bottom: 0px;">You See Events</h1>
-            <h3 style="margin-top: 0px; font-weight:500"> ー An Android app for students to discover and promote events</h3>
-            <img src="images/youseeevents/banner.png" style="width: 1000px">
-            Course: CSE 110 ー Software Engineering @ UCSD <br>
-            Timeline: April - May 2019 (8 weeks) <br>
-            Scope: Android development, Agile development <br>
-            Teammates: Adam Loop, Adrian Mendoza, Andrew Muro, Darrell Tan, Dhruv Duggal, Edward Yoon, Kevin Chan, Shri Jalsingh & Tai White            
+            <h1>You See Events</h1>
+            <h3> ー An Android app for students to discover events</h3>
+            <img src="images/youseeevents/banner.png" width="100%">
+
+            <table>
+                <tr>
+                    <td class="tableheader">course</td>
+                    <td>cse 110 - software engineering @ ucsd</td>
+                </tr>
+                <tr>
+                    <td class="tableheader">timeframe</td>
+                    <td>apr 2019 - may 2019</td>
+                </tr>
+                <tr>
+                    <td class="tableheader">scope</td>
+                    <td>agile & scrum development, android studio, xml, figma</td>
+                </tr>
+                    <td class="tableheader">final product</td>
+                    <td><a href="https://github.com/youseeevents/Application">github</a></td>
+                </tr>
+            </table>
     </header>
-    <br>
-        <div>
-            <h2 class="heading">Project Overview</h2>
+    
+    <main class="project">
+        <h2>Project Overview</h2>
             <p>
                 In a Software Engineering course at UCSD, I worked with 9 other computer science students to develop an app while working under an agile development framework. The prompt for the project was open ended: create any kind of app that targeted a user base with a specific need. Each week we created and presented artifacts to guide our development and gain continuous feedback from our peers and instructors. 
             </p>
             <br>
 
-            <h2 class ="heading">Background</h2>
+            <h2>Background</h2>
             <p>
                 Our brainstorming began with thinking about what apps we would want in our daily lives as students. One idea we were drawn to was a way to discover events on campus, especially when thinking about how our school is labelled as “socially dead”.
                 Even though there were existing platforms for event sharing, there was no organized or uniform system to easily find or publicize events on campus. With the amount of social media posts created by all the different organizations on campus, students might never see advertisements for events they actually might be interested in.
-                <br><br>
-                <h3 style="font-weight: 700; text-align: center; margin: 20px 45px;">
-                    Students need a way to easily discover campus events that relate to their interests, and event organizers need a platform to publicize their events to larger groups of people.
-                </h3>
             </p>
 
-            <br>
-            <h2 class="heading">Competitive Audit</h2>
+            <h3 class="pov">
+                    Students need a way to easily discover campus events that relate to their interests, and event organizers need a platform to publicize their events to larger groups of people.
+            </h3>
+
+            <h2>Competitive Audit</h2>
             <p>
                 The main inspiration for our app came from viewing the student events website for UCSD, but we also surveyed other platforms to determine what features contributed to good and bad event marketing.
                 These platforms include UCSD's variety of Facebook groups and email newsletters.
-                <br><br>
-                <h3 style="margin-bottom: 0px;">UCSD’s current event website</h3><br>
-                <img class="mx-auto d-block" width="700px;" src="images/youseeevents/ucsd.png">
-                    <table style="width: 90%; margin: 20px auto">
-                        <tr>
-                            <th>Pros</th>
-                            <th>Cons</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>Events are displayed in a list format</li>
-                                    <li>Option to filter events by tags</li>
-                                    <li>Tags are descriptive</li>
-                                    <li>Can view more details of an event by clicking on it</li>                                        
-                                </ul>
-                            </td>
-                            <td>
-                                <ul>
-                                    <li>Featured events are not shown chronologically</li>
-                                    <li>Some tags do not have any events, such as colleges or student organizations</li>
-                                    <li>User cannot mark they are interested in an event</li>
-                                    <li>User cannot save any data to a calendar</li>                          
-                                </ul>
-                            </td>
-                            
-                        </tr>
-                    </table>
-                <br>
-                <h3 style="margin-bottom: 0px;">Facebook</h3><br>
-                <img class="mx-auto d-block" width="700px;" src="images/youseeevents/fb.png">
-                <table style="width: 90%; margin: 20px auto;">
+            </p>
+            
+            <p>
+                <h3>UCSD’s current event website</h3>
+                <img class="comp" style="width: 65%" src="images/youseeevents/ucsd.png">
+                <table class="analysis">
+                    <tr>
+                        <th>Pros</th>
+                        <th>Cons</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Events are displayed in a list format</li>
+                                <li>Option to filter events by tags</li>
+                                <li>Tags are descriptive</li>
+                                <li>Can view more details of an event by clicking on it</li>                                        
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Featured events are not shown chronologically</li>
+                                <li>Some tags do not have any events, such as colleges or student organizations</li>
+                                <li>User cannot mark they are interested in an event</li>
+                                <li>User cannot save any data to a calendar</li>                          
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                </table>
+            </p>
+            
+            <p>
+                <h3>Facebook</h3>
+                <img class="comp" style="width: 65%" src="images/youseeevents/fb.png">
+                <table class="analysis">
                     <tr>
                         <th>Pros</th>
                         <th>Cons</th>
@@ -157,13 +123,12 @@
                                 <li>Widely used by students</li>
                                 <li>User can mark they are interested/going to an event</li>
                                 <li>User can invite their friends to events</li>
-                                <li>Search feature</li>
                                 <li>User can follow groups to see events</li>
                             </ul>
                         </td>
                         <td>
                             <ul>
-                                <li>Notification that an event is happening/coming up may be ignored</li>
+                                <li>Notifications of events may be ignored</li>
                                 <li>User will only see a handful of events on their timeline</li>
                                 <li>Some groups will only post photos publicizing events rather than actual event pages</li>
                                 <li>No way of filtering events by type</li>
@@ -171,10 +136,12 @@
                         </td>
                     </tr>
                 </table>
-                <br><br><br>
-                <h3 style="margin-bottom: 0px;">Emails</h3><br>
-                <img style="float:left; width:250px; margin-left: 12px;" src="images/youseeevents/email.png">
-                <table style="width: 65%; margin: 100px auto">
+            </p>
+            
+            <p>
+                <h3>Emails</h3>
+                <img class="comp" style="width: 50%" src="images/youseeevents/email.png">
+                <table class="analysis">
                     <tr>
                         <th>Pros</th>
                         <th>Cons</th>
@@ -195,17 +162,20 @@
                         </td>
                     </tr>
                 </table>
-                <br>
+            </p>
+                
+            <p>
                 After reflecting on the different methods of event marketing, we decided to focus on what each platform did successfully and what each platform could improve upon. Our app was very driven by the idea of being able to search and filter events easily through a singular platform. 
             </p>
-            <br>
-            <h2 class="heading">Needfinding</h2>
+            
+
+            <h2>Needfinding</h2>
             <p>
                 After researching the available resources to find and promote events, we compiled the different needs a student and event organizer may have while using our app. We did this by creating an user stories, a tool of agile development used to help developers imagine and understand the perspective of their user base.
                 These user stories explain requirements of the app and highlight what user needs correlate to it. The artifact can be seen in the pdf below.
-                <br><br>
-                <iframe class="mx-auto d-block" src="images/youseeevents/docs/userstories.pdf#toolbar=0" width="80%" height="400px"></iframe>
-                <br>
+            </p>
+            <iframe class="mx-auto d-block" src="images/youseeevents/docs/userstories.pdf#toolbar=0" width="80%" height="400px"></iframe>
+            <p>
                 <b>Student users</b> would want to:
                 <ul style="margin-top: 0px;">
                     <li>Save and view data about events they are interested in</li>
@@ -222,112 +192,109 @@
                 </ul>
             </p>
 
-            <br>
-            <h2 class="heading">User Personas</h2>
+            <h2>User Personas</h2>
             <p>
                 <img src="images/youseeevents/persona1.png" style="float: left; width: 100px">
                 Jay is a fourth year student at UCSD. He is currently a board member of an engineering student org and wants to promote their first GBM of the quarter. He’s posted on Facebook groups and handed out flyers in person, but he wishes there was a better way to reach students that would be interested in joining a club.
-                <br><br><br>
+            </p>
+            <br>
+            <p>
                 <img src="images/youseeevents/persona2.png" style="float: left; width: 100px">
                 Ann is a first year student at UCSD. She and her roommates want to attend a Welcome Week event that their RA told them to check out, but can’t remember the name or location of it. She and her roommates wish there was an easier way to find all these cool events her RA had told them about.
             </p>
 
-            <br>
-            <h2 class="heading">Use Case Diagram</h2>
+            <h2>Use Case Diagram</h2>
             <p>
                 We constructed a use case diagram in order to specify the requirements of our app, show its functionality, and to show how our stakeholders will interact with these requirements.
                 The use cases are meant to define the functionalities we want to be available in our app; we created these before development in order to ensure proper workflow and guide our focus.
-                <br><br>
-                <img src="images/youseeevents/usecase.png" width="1000px">
+                <img src="images/youseeevents/usecase.png" width="100%">
             </p>
 
-            <br>
-            <h2 class="heading">Screen Sequence Diagrams</h2>
+            <h2>Screen Sequence Diagrams</h2>
             <p>
                 We used screen sequence diagrams to show the interaction between objects in the system; the diagrams are used to guide development by showing how the system should function for a given interaction.
-                <br><br>
-                These diagrams show how interaction will begin from front end (the Android XML file), and then respond accordingly with the use of Java controller classes. It also shows when items are parsed to our database for certain interactions. Most often these interactions involve submitting forms; one example of this would be registering account data.
-                <br><br>
-                <iframe class="mx-auto d-block" src="https://docs.google.com/presentation/d/e/2PACX-1vScWFgWWM-3rnWeMYjg5d_ZPi3BROwIAVwHOGyU5qDV8pFz-b3QmaES0XEnnTwyRkuA9TeTG9SXRJ2J/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
             </p>
+            <p>
+                These diagrams show how interaction will begin from front end (the Android XML file), and then respond accordingly with the use of Java controller classes. It also shows when items are parsed to our database for certain interactions. Most often these interactions involve submitting forms; one example of this would be registering account data.
+            </p>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vScWFgWWM-3rnWeMYjg5d_ZPi3BROwIAVwHOGyU5qDV8pFz-b3QmaES0XEnnTwyRkuA9TeTG9SXRJ2J/embed?start=false&loop=false&delayms=60000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-            <br>
             <h2 class="heading">Database Schema</h2>
             <p>
                 In addition to our sequence diagrams, we created a database schema to define the entire database we needed to create in order to develop our app. A user database consists of variables such as id, password, account type flag, and their array of saved events. The event database is constructed of all the components used to publish an event object.
-                <br>
-                <img class="mx-auto d-block" src="images/youseeevents/database.png" width="700px;">
+                <img width="100%" src="images/youseeevents/database.png">
             </p>
 
-            <br>
             <h2 class="heading">Design Iterations</h2>
-            <br>
-            <div class="mx-auto d-block" style="text-align: center;">
-                <img src="images/youseeevents/a.png" height="500px" style="margin-right: 20px;">
-                <img src="images/youseeevents/b.png" height="500px"><br>
-                <span style="font-size:14px">Initial Homepage Design vs Final Design</span>
-            </div>
-            <br>
+            
+            <p style="text-align: center;">
+                <img width="40%" style="display: inline-block;" src="images/youseeevents/a.png">
+                &nbsp;
+                <img width="40%" style="display: inline-block;" src="images/youseeevents/b.png">
+                <br>
+                <span style="font-size:1rem">Initial Homepage Design vs Final Design</span>
+            </p>
+            
             <p>
                 In our team, I took on the role as the user interface specialist. Being my first time working with mobile development, I created the initial design to develop the overall look and feel of our app. I presented this initial design to our instructor and peers, and received feedback on how the design could be improved upon in order to promote usability. These improvements can be seen above, such as adding labels to the bottom navigation.
-                <br><br>
+            </p>
+
+            <p>
                 After learning more about the tools in Android’s XML design, my team and I reiterated on this design to make developing easier, as it was the first time most of us were using Android Studio. We made these changes under a SCRUM development process, making adjustments to the design after certain features could not be implemented in the way we imagined. This can be seen with the search feature being transferred to its own page rather than being a working feature of the homepage.
             </p>
 
-            <br>
-            <h2 class="heading">Sample Screens</h2>
+            <h2>Sample Screens</h2>
             <p>
                 This is the final version of our app’s sample screens, created in Figma. It demonstrates the workflow of a student using the app and an event organizer using the app. A student user has the ability to view, search, and save events. An organizer is primarily used to create and publish events to the app as well as edit the details of their events.
-                <img src="images/youseeevents/sample.png" width="1000px">
+                <img src="images/youseeevents/sample.png" width="100%">
             </p>
 
-            <h2 class="heading">Test Cases</h2>
+            <h2>Test Cases</h2>
             <p>
                 As part of quality assurance, we created both test cases and user acceptance tests; these cases are meant to test functionality and to ensure that user goals and needs are accounted for.
-                <br><br>
+            </p>
+
+            <p>
                 <b>Test cases</b> were used to ensure our final product met the system requirements we established at the beginning of our project. Test cases are used to identify the workflow of the system, particularly the back end, in order to achieve a user goal.
-                <br><br>
-                <iframe class="mx-auto d-block" width="80%" height="500px" src="images/youseeevents/docs/testcases.pdf#toolbar=0 "></iframe>
-                <br><br>
+            </p>
+            <iframe class="mx-auto d-block" width="80%" height="500px" src="images/youseeevents/docs/testcases.pdf#toolbar=0 "></iframe>     
+            <p>
                 <b>User acceptance tests</b> are black box system tests used to address the implementation of user needs. These tests ensure that users are able to achieve an expected result through front end interaction only, such as pressing buttons.
-                <br><br>
-                <iframe class="mx-auto d-block" src="images/youseeevents/docs/acceptancetests.pdf#toolbar=0" width="80%" height="500px"></iframe>
-                <br><br>
+            </p>
+            <iframe class="mx-auto d-block" width="80%" height="500px" src="images/youseeevents/docs/acceptancetests.pdf#toolbar=0"></iframe>
+            <p>
                 By creating and performing these tests, we were able to guarantee that our app had all components required to carry out established tasks.
             </p>
 
-            <br>
-            <h2 class="heading">Final Product</h2>
+            
+            <h2>Final Product</h2>
+            <img src="images/youseeevents/final.png" width="100%;">
+            
+            <p style="text-align: center;">
+            <a href="https://github.com/youseeevents/Application" class="redirect" style="display: inline-block; text-align: center;">View our GitHub here!</a>
+            </p>
+        
             <p>
-                <img src="images/youseeevents/final.png" width="1000px;">
-                <a href="https://github.com/youseeevents/Application" id="productlink"><h3 style="margin: 0px; text-align: center;">View our GitHub here!</h3></a>
-                <br>
                 By the end of the course, we were able to present a functioning Android app that utilized web scraping and Firebase to store data of events and simulate different user accounts. Users could register and log in to accounts, change their password, and have accurately saved data. Student accounts could view and save events, and organizer accounts were able to publish events to the app. However, due to limitations of both time and data storage, we were unable to develop our app to its fully planned extent.
-                <br><br>
+            </p>
+            <p>
                 As seen, the final version of our app does not display all necessary data points in the homepage -- due to restrictions from Firebase storage. In addition, some parts of our interface, such as event details, have very minimal styling due to our team having to prioritize development over learning about Android layout elements.
             </p>
 
-            <br>
-            <h2 class="heading">Reflection</h2>
+            <h2>Reflection</h2>
             <p>
                 This was my first time developing such a large scale app in a team. This project taught me a lot about project management and gave me better
                 insight on how it is to work under an agile development framework. If I were to revisit this project, I think I would definitely commit more time
                 to learning and understanding XML files and Android layout development; I would want to learn how to better design an interface that would be
                 able to adapt to the Java controller classes my team had been implementing.
-                <br><br>
+            </p>
+            <p>
                 Overall, this project was such a great learning experience, and it could not have been done without the hard work of my teammates and the helpful feedback of our CSE 110 instructors. :)
             </p>
 
             <a href="index.html" style="color:gray;">&#x2190; Back to homepage</a><br><br>
         </div>
-    </div>
-    
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </main>
 
 </body>
 </html>
